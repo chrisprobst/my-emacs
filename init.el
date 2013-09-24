@@ -37,10 +37,6 @@
 (define-key haskell-mode-map (kbd "C-.") 'haskell-move-nested-right)
 
 
-(load-theme 'solarized-light t)
-
-
-
 (defun copy-line-or-region ()
   "Copy current line, or current text selection."
   (interactive)
