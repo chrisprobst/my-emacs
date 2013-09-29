@@ -24,3 +24,4 @@ site-lisp/package/
 /.sqli_history
 /frame-restore-parameters
 /session.*
+eshell/
