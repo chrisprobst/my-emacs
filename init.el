@@ -23,8 +23,18 @@
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
 
-;; no startup msg  
-(setq inhibit-startup-message t)        ; Disable startup message 
+;; no startup msg
+(setq inhibit-startup-message t)        ; Disable startup message
+
+
+
+(set-default 'indicate-empty-lines t)
+(set-default 'fill-column 80)
+(setq visible-bell t)
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+(show-paren-mode t)
+(add-hook 'before-save-hook (lambda () (delete-trailing-whitespace)))
+(setq delete-by-moving-to-trash t)
 
 (global-linum-mode t)
 
